@@ -1,4 +1,115 @@
+body{
+    background-color: #eee8df;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin:0 auto;
+    padding:0;
+    color: #2c365a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+main{
+    width: 70vw;
+    text-align:center;
+    padding: 20px;
+    max-width:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin-top:0;
+    font-family: "Rubik Mono One", monospace;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+/* index page */
+
+#sub{
+    text-align: left;
+    border-bottom: 0.5px solid #2c365a;
+    font-family:  "Rubik Mono One", monospace;
+    font-size: 1.4rem;
+    color: #3b4776;
+    align-self: flex-start;
+}
+
+.box{
+  display: flex;  
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.trending-container{
+    background-color: #c4bcb0;
+    text-align:left;
+    padding:20px;
+    max-width:500px;
+    flex: 1;          
+    min-width: 0;     
+    font-size: 16px;  
+    transition: background-color 0.2s ease;
+}
+
+.trending-container:hover {
+    background-color: #b5ada1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.trending-container h3{
+    margin:0;
+}
+
+.trending-container p{
+    margin:0;
+}
+
+.trending-container a{
+    text-decoration: none;
+    color: #2c365a;
+}
+
+/* word pages */
+.word-container{
+    text-align:left;
+    border-radius: 12px;
+    padding: 20px;
+    max-width:350px;
+    margin: 20px auto;
+}
+.definition-container{
+    background-color: #c4bcb0;
+    text-align:left;
+    padding: 20px;
+    max-width:350px;
+    margin: 20px auto;
+}
+
+.example-display{
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.back-button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.arrow-back{
+    color:#2c365a;
+    transform: scale(1.7);
+}
+
+.arrow-back:hover{
+    color:#8e98bf;
+}
 
 /* search settings */
 .search{
@@ -7,11 +118,11 @@
     align-items: center;
     padding: 14px;
     border-radius: 28px;
-    background: #f6f6f6;
+    background:  #f5f3eff4;
     transition: background 0.25s;
+    margin-bottom: 50px;
 }
 .search:focus-within{
-
    background: #f1f1f1;
 }
 .search-input{
@@ -22,10 +133,28 @@
     outline: none;
     border: none;
     background: transparent;
-    width: 300px;
+    width: 450px;
 }
 
-.searxh-input::placeholder,
+.search-input::placeholder,
 .search-icon{
     color: rgba(0,0,0,0.5);
 }
+
+/* fonts and icons */
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+  
