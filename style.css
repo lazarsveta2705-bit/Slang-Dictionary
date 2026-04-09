@@ -49,6 +49,7 @@ h1{
 .trending-container{
     background-color: #c4bcb0;
     text-align:left;
+    align-items: center;
     padding:20px;
     max-width:500px;
     flex: 1;          
