@@ -65,6 +65,7 @@ h1{
 
 .trending-container h3{
     margin:0;
+    text-transform: uppercase;
 }
 
 .trending-container p{
