@@ -28,6 +28,53 @@ h1{
     text-align: center;
 }
 
+/* index page */
+
+#sub{
+    text-align: left;
+    border-bottom: 0.5px solid #2c365a;
+    font-family:  "Rubik Mono One", monospace;
+    font-size: 1.4rem;
+    color: #3b4776;
+    align-self: flex-start;
+}
+
+.box{
+  display: flex;  
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.trending-container{
+    background-color: #c4bcb0;
+    text-align:left;
+    padding:20px;
+    max-width:500px;
+    flex: 1;          
+    min-width: 0;     
+    font-size: 16px;  
+    transition: background-color 0.2s ease;
+}
+
+.trending-container:hover {
+    background-color: #b5ada1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.trending-container h3{
+    margin:0;
+}
+
+.trending-container p{
+    margin:0;
+}
+
+.trending-container a{
+    text-decoration: none;
+    color: #2c365a;
+}
 
 /* search settings */
 .search{
