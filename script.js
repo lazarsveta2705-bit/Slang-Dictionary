@@ -10,6 +10,7 @@ const words = [
 const input = document.querySelector('.search-input');
 const box = document.querySelector('.box');
 const sub = document.querySelector('#sub');
+const searchDiv = document.querySelector('.search'); // this was missing!
 
 const resultsBox = document.createElement('div');
 resultsBox.classList.add('box');
