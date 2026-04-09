@@ -13,7 +13,8 @@ const sub = document.querySelector('#sub');
 
 const resultsBox = document.createElement('div');
 resultsBox.classList.add('box');
-sub.before(resultsBox);
+resultsBox.id = 'results-box';
+searchDiv.after(resultsBox);
 
 input.addEventListener('input', function() {
     const query = input.value.toLowerCase().trim();
